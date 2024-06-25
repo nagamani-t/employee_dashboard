@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap');
+@layer base {
+  html,
+  body {
+    font-family: 'Mulish', Regular ;
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+  }
+}
+.custom-gradient {
+background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+width: 238px;
+height: 42px;
+mix-blend-mode: normal;
+border: 2px solid #8CFF0026;
+opacity: 1;
+border-radius: 28px;
+margin-top: 20px;
 }
